@@ -1,0 +1,58 @@
+Dockers
+---------
+
+what are then main things present in Docker container,  Three things to remember
+-------------------------
+Name space
+control group - default resources will be given by	Control group
+union file systems (UFS)--> The Docker can be run in any os beacuse of this
+
+
+5 NAme spaces
+
+The PID name space
+the net name space
+The ips name space
+The mnt name space
+The uts name space
+
+Name space is part of the kernael,The above name sapces should started when the linux or any OS boots.
+
+libcontainerd is daemonp rocess which is started with docker
+
+docker Image wil be kept in Docker registery(Is a placce where will be sore the docker Images)
+
+Two types of images:
+
+BAse Image (50MB to 300 MB)
+
+
+
+
+Custom images (You can take any Base image and installes the packages or chages you want becomes Customs Image (Ex: Rady made food))
+
+
+J frog artifactory: Where we can find all the configuration files
+
+
+Practice:
+
+Search for mini cube
+
+Micro services
+
+LAB
+--
+yum install -y docker -- Install docker packages
+systemctl enable docker -- enable packages
+systemctl status docker -- to chek the status
+systemctl start docker  -- start service
+systemctl status docker -- 
+docker search centos  -- to search for the package
+docker pull centos  -- to install centos image
+docker images    -- to see installed images
+docker info     -- Information about docker
+docker network ls  -- to check th enetwork inter faces available
+
+
+
